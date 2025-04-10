@@ -1,3 +1,3 @@
 function sayHi() {
-    alert("Hey you clicked me!");
+    alert("Porco Dio y porco Allah");
 }
