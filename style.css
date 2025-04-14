@@ -8,9 +8,18 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding:0 20px;
+  align-items: flex-start;
+  padding-top: 50px; /* distance from top - J.z */
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) { /* Phone view - J.z */
+  .container {
+    padding-top: 40px;
+  }
 }
 
 @keyframes fadeInUp {
@@ -23,6 +32,14 @@ body {
     transform: translateY(0);
   }
 }
+
+@keyframes float {
+  0% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* */
 
 .profile {  
   display: flex;
@@ -50,7 +67,6 @@ body {
   animation: fadeInUp 1.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.2s forwards;
 }
 
-
 .text {
   max-width: 600px;
 }
@@ -67,4 +83,25 @@ body {
   color: #555;
   /* Animation */
   animation: fadeInUp 1.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.35s forwards;
+}
+
+.scroll-down {
+  position: fixed;
+  bottom: 40px; /* how far UP from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float 2s ease-in-out infinite;
+  z-index: 1000; /* stays on top */
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.scroll-down:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.scroll-down.hidden {
+  opacity: 0;
+  pointer-events: none;
 }

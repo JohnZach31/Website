@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JohnZach.io</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" type="image/png" href="Favicon.png">
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -22,6 +24,7 @@
     }
     </style>
 </head>
+
 <body>
 <div class="container">
     <div class="profile">
@@ -33,5 +36,29 @@
     </div>
 </div>
 <script src="script.js"></script>
+
+<div class="scroll-down">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+       viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+       width="40" height="60"> <!-- Add width + height here -->
+    <path stroke-linecap="round" stroke-linejoin="round" 
+          d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+  </svg>
+</div>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const scrollDownIcon = document.querySelector('.scroll-down');
+    if (window.scrollY > 100) {
+      scrollDownIcon.classList.add('hidden');
+    } else {
+      scrollDownIcon.classList.remove('hidden');
+    }
+  });
+</script>
+
+
 </body>
+<footer>
+  <p>© 2025 Johnathan Zachevsky. All rights reserved.</p> 
 </html>
