@@ -34,9 +34,9 @@
   <div class="navbar-links">
     <a href="/">Home</a>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#timeline">Timeline</a>
     <a href="#contact">Contact</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#Projects">Projects</a>
   </div>
 </nav>
 
@@ -69,6 +69,15 @@
 </section>
     <section id="about" class="about-section">  
         <h2>About Me</h2>
+        <svg width="120" height="8" viewBox="0 0 120 8" xmlns="http://www.w3.org/2000/svg" style="margin: 12px 0;">
+          <defs>
+            <linearGradient id="grad-line" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0%" style="stop-color:#ff69b4; stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#00bfff; stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="120" height="8" fill="url(#grad-line)" rx="4" />
+        </svg>
         <p>I'm a dedicated Computer Science student with a strong foundation in software development and a passion for learning.</p>
         <p>Throughout my studies and independent projects, I've built a deep interest in creating thoughtful, functional digital experiences.</p>
         <p>I approach problems with curiosity and persistence, and I’m always excited to grow and take on new challenges in the tech world.</p>
@@ -82,6 +91,34 @@
       </div>
     </section>
 
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <p>Let's grab a cup of coffee!</p>
+      <form action="https://formspree.io/f/mblgbvee" method="POST">
+          <label>
+              First Name:
+              <input type="text" name="first_name" required>
+          </label>
+          <label>
+              Last Name:
+              <input type="text" name="last_name" required>
+          </label> 
+          <label>
+              Age:
+              <input type="number" name="age">
+          </label>
+          <label>
+              Email:
+              <input type="email" name="email" required>
+          </label>
+          <label>
+              Message:
+              <textarea name="message" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+      </form>
+  </section>
+  
   <div class="scroll-down">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="40" height="60">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
