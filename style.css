@@ -39,9 +39,15 @@ body {
   100% { transform: translateX(-50%) translateY(0); }
 }
 
-@keyframes trickleDown {
-  0% { transform: translateY(0); opacity: 1; }
-  50% { transform: translateY(10px); opacity: 0.6; }
+@keyframes trickleback {
+  0% { transform: translateY(0); opacity: 0; }
+  50% { transform: translateY(-10px); opacity: 0.6; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes trickleCycle {
+  0% { transform: translateY(0); opacity: 0; }
+  50% { transform: translateY(-10px); opacity: 0.6; }
   100% { transform: translateY(0); opacity: 1; }
 }
 
@@ -84,6 +90,11 @@ body {
   animation: fadeInUp 1.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.3s forwards;
 }
 
+.text h1 .letter {
+  animation: trickleCycle 5s ease-in-out infinite;
+}
+
+
 .text p {
   font-size: 1.1rem;
   color: #555;
@@ -95,9 +106,10 @@ body {
   display: inline-block;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+  
 
-.trickle {
-  animation: trickleDown 0.6s ease forwards;
+.trickle-back {
+  animation: trickleback 0.6s ease forwards;
 }
 
 .scroll-down {

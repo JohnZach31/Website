@@ -10,12 +10,25 @@ document.addEventListener("DOMContentLoaded", () => {
   
     title.innerHTML = wrapLetters(title.textContent);
   
-    title.addEventListener("mouseenter", () => {
-      title.querySelectorAll(".letter").forEach((span) => {
-        span.classList.remove("trickle");
-        void span.offsetWidth;
-        span.classList.add("trickle");
-      });
+    // Start the animation once the page loads
+    title.querySelectorAll(".letter").forEach((span) => {
+      span.classList.add("trickle-back");
     });
+
+    // Animation when mouse enters the title
+    title.addEventListener("mouseenter", () => {
+        title.querySelectorAll(".letter").forEach((span) => {
+          span.classList.remove("trickle-back"); // Remove opposite
+          void span.offsetWidth; // Force reflow
+          span.classList.add("trickle");
+        });
+      });
+      
+      title.addEventListener("mouseleave", () => {
+        title.querySelectorAll(".letter").forEach((span) => {
+          span.classList.remove("trickle"); // Remove the original
+          void span.offsetWidth;
+          span.classList.add("trickle-back");
+        });
+      });
   });
-  
