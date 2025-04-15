@@ -64,7 +64,6 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content:space-between;
   padding: 12px 24px;
   background-color: #f8f8f8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -85,15 +84,21 @@ body {
 
 .navbar-links a {
   margin-left: 20px;
+  font-weight: normal;
+  font-style: normal;
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.3 ease;
+  transition: all 0.3 ease;
 }
 
 .navbar-links a:hover {
-  color: #fdfdfd;
+  color: #0077B5;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: bold;
 }
+
 .profile-img {
   width: 120px;
   height: 120px;
