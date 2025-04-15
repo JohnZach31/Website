@@ -15,20 +15,4 @@ document.addEventListener("DOMContentLoaded", () => {
       span.classList.add("trickle-back");
     });
 
-    // Animation when mouse enters the title
-    title.addEventListener("mouseenter", () => {
-        title.querySelectorAll(".letter").forEach((span) => {
-          span.classList.remove("trickle-back"); // Remove opposite
-          void span.offsetWidth; // Force reflow
-          span.classList.add("trickle");
-        });
-      });
-      
-      title.addEventListener("mouseleave", () => {
-        title.querySelectorAll(".letter").forEach((span) => {
-          span.classList.remove("trickle"); // Remove the original
-          void span.offsetWidth;
-          span.classList.add("trickle-back");
-        });
-      });
   });

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JohnZach.io</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -27,49 +28,65 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="profile">
-      <img src="A.png" alt= "John Zach" class="profile-img"/>
-      <div class="text">
-        <h1 id="trickle-title"> Hi, I'm Johnathan Zach</h1>
-        <p> I'm a computer Science student and aspiring software developer. This is my first website ever!</p>
-        </div>
-    </div>
-</div>
-<script src="script.js"></script>
+  <div class="container">
+      <div class="profile">
+          <img src="A.png" alt="John Zach" class="profile-img" />
+          <div class="text">
+              <h1 id="trickle-title">Hi, I'm Johnathan Zach</h1>
+              <p>I'm a computer Science student and aspiring software developer.</p>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/digitalmaster_tech/" target="_blank" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/johnathanzach/" target="_blank" title="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/@yourusername" target="_blank" title="YouTube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
 
-<div class="scroll-down">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
-       viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
-       width="40" height="60"> <!-- Add width + height here -->
-    <path stroke-linecap="round" stroke-linejoin="round" 
-          d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
-  </svg>
-</div>
+    
 
-<script>
-  window.addEventListener('scroll', function () {
-    const scrollDownIcon = document.querySelector('.scroll-down');
-    if (window.scrollY > 100) {
-      scrollDownIcon.classList.add('hidden');
-    } else {
-      scrollDownIcon.classList.remove('hidden');
-    }
-  });
-</script>
+  <div class="scroll-down">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="40" height="60">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+      </svg>
+  </div>
 
-<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/games/gam-14/gam1340.cur), auto !important;}</style>
-<a href="https://www.cursors-4u.com/cursor/2011/11/05/league-of-legends-pointer.html" target="_blank" title="League Of Legends Pointer">
-<img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="League Of Legends Pointer" style="position:absolute; top: 0px; right: 0px;" />
-</a>
+  <script src="script.js"></script>
 
-<style type="text/css">
-  a {
-    cursor: url(https://cur.cursors-4u.net/games/gam-14/gam1339.cur), pointer !important;
-  }
-</style>
+  <script>
+      window.addEventListener('scroll', function () {
+          const scrollDownIcon = document.querySelector('.scroll-down');
+          if (window.scrollY > 100) {
+              scrollDownIcon.classList.add('hidden');
+          } else {
+              scrollDownIcon.classList.remove('hidden');
+          }
+      });
+  </script>
+
+  <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/games/gam-14/gam1340.cur), auto !important;}</style>
+  <a href="https://www.cursors-4u.com/cursor/2011/11/05/league-of-legends-pointer.html" target="_target" title="League Of Legends Pointer">
+      <img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="League Of Legends Pointer" style="position:absolute; top: 0px; right: 0px;" />
+  </a>
+
+  <style type="text/css">
+      a {
+          cursor: url(https://cur.cursors-4u.net/games/gam-14/gam1339.cur), pointer !important;
+      }
+  </style>
 
 </body>
 <footer>
-  <p>© 2025 Johnathan Zachevsky. All rights reserved.</p> 
+  <p>© 2025 Johnathan Zachevsky. All rights reserved.</p>
+</footer>
 </html>
