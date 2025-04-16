@@ -288,40 +288,38 @@ html {
 }
 
 .contact-container {
-  display: flex;              /* Makes .contact-left and .contact-right go side-by-side */
-  justify-content: space-between; /* Spreads them out */
-  align-items: flex-start;     /* Aligns them to the top */
-  flex-wrap: wrap;           /* Allows them to stack on small screens */
-  gap: 40px;                /* Keeps the space between them */
-  width: 100%;              /* Takes up the parent's width */
-  max-width: 1200px;         /* Optional: stops it getting too wide on large screens */
-  margin: 0 auto;           /* Centers the container if max-width is used */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1200px; /* Optional: Adjusts the max width for the section */
+  margin: 0 auto;
 }
 
 .contact-left {
-  max-width: 250px;
-  flex: 1 1 400px;
-  min-width: 320px;
+  flex: 1;
+  margin-right: 20px; /* Space between form and coffee gif */
 }
 
+.contact-left svg {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
 .contact-right {
-  flex: 1 1 400px;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact-right img {
-  max-width: 350px;
-  height: auto;
-  border-radius: 10px;
-  animation: float 3s ease-in-out infinite;
-}
-
 .coffee-gif {
-  max-width: 100%;
+  max-width: 30%; /* Ensures the image is responsive */
   height: auto;
-  border-radius: 10px;
+  position: absolute;
+  padding-left: 40px;
+  margin-left: 600px;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -378,7 +376,7 @@ form {
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 24px 14px 10px 14px;
+  padding: 28px 14px 10px 14px;
   font-size: 18px;
   font-family: 'VT323', monospace;
   border: 1px solid #ccc;
@@ -402,11 +400,12 @@ form {
   pointer-events: none;
 }
 
+/* Label animation */
 .form-group input:focus + label,
 .form-group input:not(:placeholder-shown) + label,
 .form-group textarea:focus + label,
 .form-group textarea:not(:placeholder-shown) + label {
-  top: -10px;
+  top: 6px;
   left: 12px;
   font-size: 14px;
   color: #0077B5;
