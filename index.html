@@ -78,45 +78,59 @@
           </defs>
           <rect x="0" y="0" width="120" height="8" fill="url(#grad-line)" rx="4" />
         </svg>
-        <p>I'm a dedicated Computer Science student with a strong foundation in software development and a passion for learning.</p>
-        <p>Throughout my studies and independent projects, I've built a deep interest in creating thoughtful, functional digital experiences.</p>
-        <p>I approach problems with curiosity and persistence, and I’m always excited to grow and take on new challenges in the tech world.</p>
-        <p>In my journey so far, I’ve gained hands-on experience with a wide range of technologies including Python, JavaScript, Angular, and SQL.</p>
-        <p>For this portfolio, I also worked with HTML, CSS, and vanilla JavaScript to design and build an interface that reflects both my technical growth and my eye for detail.</p>
-        <p>Whether it’s designing user interfaces, building backend logic, or connecting it all together — I enjoy the process of turning ideas into working solutions.</p>
-        <p>Outside of programming, I’m a creative at heart. I play guitar, drums, and piano, and I also paint and create digital artwork.</p>
-        <p>In my day-to-day, I explore graphic design and visual storytelling, which has sharpened my sense for user experience and visual aesthetics.</p>
-        <p>I also have experience with computer networking, and I enjoy combining my creative and technical sides to craft systems and visuals. </p>
+        <p>Okay, so… I’m a Computer Science student, right? And basically, I spend an unhealthy amount of time writing code and trying to make the internet a cooler place.</p>
+        <p>I kinda fell in love with building things that work, but also look nice doing it.</p>
+        <p>Like, if software development was a sport, I’d be the guy who shows up with matching shoes and still runs into a wall... but learns from it and keeps going.</p>
+        <p>Over time — through school, side projects, and way too many late nights with StackOverflow. I’ve gotten pretty comfortable working with Python, C, C++... </p>
+        <p>I also designed this portfolio myself using good ol’ HTML, CSS, and vanilla JavaScript, because why not torture myself a little?</p>
+        <p>What really gets me hyped is connecting all the pieces — from sketching a UI to writing the backend logic, then seeing it all come together like, “Wait… I made that?”</p>
+        <p>But hey, when I’m not smashing my keyboard trying to debug something, I’m probably jamming out on guitar, piano, or drums.</p>
+        <p>Or painting. Or making digital art. I’m kind of a creative mess, and I love it.</p>
+        <p>I also have experience with computer networking. Turning chaos into order, or the otherway around, JUST WITH WIFI! </p>
+        <p>You can keep reading here with this button right here on my CV: </p>
         <a href="Assets/Johnathan_Zachevsky_CV.pdf" download class="download-btn">Download Resume</a>
       </div>
     </section>
 
     <section id="contact" class="contact-section">
+      <div class="contact-left">
       <h2>Contact Me</h2>
       <p>Let's grab a cup of coffee!</p>
       <form action="https://formspree.io/f/mblgbvee" method="POST">
-          <label>
-              First Name:
-              <input type="text" name="first_name" required>
-          </label>
-          <label>
-              Last Name:
-              <input type="text" name="last_name" required>
-          </label> 
-          <label>
-              Age:
-              <input type="number" name="age">
-          </label>
-          <label>
-              Email:
-              <input type="email" name="email" required>
-          </label>
-          <label>
-              Message:
-              <textarea name="message" required></textarea>
-          </label>
+
+        <div class="form-group">
+          <input type="text" name="first-name" id="first-name" required placeholder=" " />
+          <label for="first-name">First Name</label>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" name="last-name" id="last-name" required placeholder=" " />
+          <label for="last-name">Last Name</label>
+        </div>
+        
+        <div class="form-group">
+          <input type="number" name="age" id="age" placeholder=" " />
+          <label for="age">Age</label>
+        </div>
+        
+        <div class="form-group">
+          <input type="email" name="email" id="email" required placeholder=" " />
+          <label for="email">Email</label>
+        </div>
+        
+        <div class="form-group">
+          <textarea name="message" id="message" rows="4" required placeholder=" "></textarea>
+          <label for="message">Message</label>
+        </div>
+        
+
           <button type="submit">Send</button>
       </form>
+    </div>
+
+    <div class="contact-right">
+      <img src="coffe.gif" alt="Coffee" />
+    </div>
   </section>
   
   <div class="scroll-down">
