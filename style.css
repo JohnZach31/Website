@@ -273,11 +273,11 @@ html {
 }
 
 .coffee-gif {
-  max-width: 30%; /* Ensures the image is responsive */
+  max-width: 32%; /* Ensures the image is responsive */
   height: auto;
   position: absolute;
   padding-left: 40px;
-  margin-left: 600px;
+  margin-left: 650px;
   animation: float 3s ease-in-out infinite;
 }
 
