@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  font-family: 'VT323', monospace;
+  font-size: 30px; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 15px 30px; 
+  background-color: transparent; 
+  box-shadow: none;
+  width: 100%; 
+  box-sizing: border-box; 
+  position: relative; 
+  z-index: 700; 
+}
+
+.navbar-logo img {
+  height: 70px; 
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.2); 
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin-left: 25px; 
+  text-decoration: none;
+  color: #333; 
+  font-weight: 500; 
+  transition: all 0.0001s ease;
+}
+.navbar-links a:visited {
+  color: #333; /* Color for visited links */
+}
+.navbar-links a:hover {
+  color: #0077B5; 
+  font-weight: 700; 
+  font-style: italic;
+  text-decoration: bold;
+}
+
+/* Add a media query for responsiveness if needed */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack logo and links vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px 20px;
+  }
+  .navbar-links {
+    margin-top: 10px; /* Add space between logo and links */
+    width: 100%; /* Make links take full width */
+    justify-content: space-around; /* Distribute links evenly */
+  }
+  .navbar-links a {
+    margin-left: 0; /* Remove left margin for stacked links */
+    margin: 0 5px; /* Add small horizontal margin */
+    font-size: 24px; /* Slightly smaller font on mobile */
+  }
+}
