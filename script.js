@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
     title.querySelectorAll(".letter").forEach((span) => {
       span.classList.add("trickle-back");
     });
-
-  });
+});
+      

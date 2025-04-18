@@ -71,11 +71,10 @@ html {
   font-size: 30px;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: -150px;
+  padding-bottom: 50px;
   background-color: transparent;
   box-shadow: none;
-  position: static;
   top: 0;
   z-index: 700;
 }
