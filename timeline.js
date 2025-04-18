@@ -6,12 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadingMessage = document.getElementById('loading-message');
 
   const messages = [
-    "Shuffling memories...",
-    "Dealing the past...",
-    "Building your timeline...",
-    "Loading emotional data...",
-    "Flipping through the years...",
-    "Compiling nostalgia..."
+    "Attempting to code... but I'm also watching cat videos.",
+    "Just waiting for the bugs to fix themselves... any minute now.",
+    "Hash-mapping my timeline...",
+    "You wouldn't believe the amount of caffeine involved in this...",
+    "Fixing one bug... accidentally introducing 10 more.",
+    "Debugging... but first, let’s finish this solo on the guitar.",
+    "Loading... please hold while I pretend to know what I'm doing.",
+    "Just a moment... I'm trying to remember where I put my coffee.",
+    "Loading... or as I like to call it, 'me time'.",
+    "Loading... please hold while I try to remember how to code.",  
   ];
 
   if (loadingMessage) {
